@@ -1,6 +1,7 @@
 * {
     margin: 0;
     background-color: rgb(252, 251, 250);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 div {
@@ -9,6 +10,8 @@ div {
     height: auto;
     margin: 0 auto;
     justify-content: center;
+    text-align: center;
+    flex-direction: column;
 }
 
 h1 {
@@ -19,5 +22,19 @@ h1 {
     color: rgb(228, 253, 2);
     justify-content: center;
     margin-top: 4%;
+}
+
+section {
+    margin-bottom: 5%;
+}
+
+h2 {
+    color: blueviolet;
+    margin-bottom: 1%;
+}
+
+figcaption {
+    color: white;
+    margin-top: 1%;
 }
 
