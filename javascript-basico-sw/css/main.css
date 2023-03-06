@@ -33,6 +33,23 @@ h2 {
     margin-bottom: 1%;
 }
 
+/* h2:hover {
+    background-color: gold;
+    border: 0.5px solid black;
+    transform: scale(1.4); 
+    box-shadow: 0 5px 15px rgba(0,0,0,0.6);
+} */
+
+img {
+    width: auto;
+}
+
+img:hover {
+    border: 1px solid black;
+    transform: scale(1.4); 
+    box-shadow: 0 5px 15px rgba(0,0,0,0.6);
+}
+
 figcaption {
     color: white;
     margin-top: 1%;
