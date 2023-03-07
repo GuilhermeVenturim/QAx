@@ -76,22 +76,54 @@ console.log(resultado)
         3 - Para:  Identifica valor agregado da funcionalidade
 
     PO + QA: Critérios de aceitação
-        Cenário 1 - Saque com sucesso (caminho feliz)
+*/
+
+// controle de fluxo
+let saldo = 1000
+let valorMax = 700
+
+function saque(valor) {
+
+    if (valor > saldo) {
+
+        alert('Saldo insuficiente. Por favor, digite um novo valor.')
+
+    } else if (valor > valorMax) {
+
+        alert('Operação não realizada. Valor máximo por operação é de R$ 700,00.')
+
+    } else {
+        
+        saldo = saldo - valor
+    
+    }
+}
+
+saque(701) //massa de teste
+
+console.log(saldo)
+
+/*        Cenário 1 - Saque com sucesso (caminho feliz)
             - Dado que meu saldo é de R$ 1000,00
             - Quando faço um saque de R$ 500,00
             - Então o valor de saque deve ser deduzido do meu saldo
+*/
 
-        Cenário 2 - Saque com valor superior ao saldo
+/*
+          Cenário 2 - Saque com valor superior ao saldo
             - Dado que meu saldo é de R$ 1000,00
             - Quando faço um saque de R$ 1500,00
             - Então não deve deduzir do meu saldo
             - E deve mostrar uma mensagem de alerta informando que o saque não foi realizado por saldo insuficiente
+*/
 
-        Cenário 3 - 
-
-
-        Cenário 4 - 
-
+/*
+          Cenário 3 - Saque com valor máximo
+            - Dado que meu saldo é de R$ 1000,00
+            - E o valor máximo por operação é de R$ 700,00
+            - Quando quando faço o saque no valor de R$ 701,00
+            - Então não deve deduzir do meu saldo
+            - E deve mostrar uma mensagem de alerta informando que o saque não foi realizado por exceder o limite por operação
 
 */
 
