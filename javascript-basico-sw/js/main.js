@@ -140,11 +140,55 @@ personagens.push('C3pO')
 
 console.log(personagens)
 
-/* Controle de repetição */
+/* Controle de repetição (Loops) */
 
+personagens.forEach(function(p){ //usando função anônima
+
+    console.log(p)
+
+})
+
+for (let i in personagens) {
+
+    console.log(i)                  //imprime o indice de  cada item do array
+    console.log(personagens[i])     //imprime os valores de cada item no array.
+}
+
+// 1. (let i = 0)   variável para inicialização em determinado indice
+// 2. (i<=10)       Condição de parada
+// 3. (i++)         incrementa até atingir a condição de parada
+for (let i = 0; i <= 10; i++) {
+
+    console.log(1)
+
+}
 
 /* Objetos */
+
+let yoda = {}
+
+yoda.nome = "Mestre Yoda"
+yoda.idade = 100
+yoda.jedi = true
+
+console.log(yoda)
+
+//objeto semelhante a json
+let info = {
+    nome: 'Mestre Yoda',
+    idade: 100,
+    jedi: true,
+    mostraIdade: function() {
+
+        console.log(this.idade) //Imprime somente a idade
+
+        console.log(`A idade do ${this.nome} é ${this.idade} anos`) //interpolação de string
+
+    }
+}
+yoda.mostraIdade()
 
 
 /* Constantes */
 
+//const só deve ser usado onde o valor atribuído não será alterado.
