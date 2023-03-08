@@ -130,6 +130,15 @@ console.log(saldo)
 
 /* Arrays */
 
+let gaveteiro = ['Camisas', 'Documentos', 'Eletrônicos', 'Livros']
+
+console.log(gaveteiro[3])
+
+let personagens = ['Mestre Yoda', 'Darth Vader', 'Princesa Leia', 'Luke Skywalker']
+
+personagens.push('C3pO')
+
+console.log(personagens)
 
 /* Controle de repetição */
 
