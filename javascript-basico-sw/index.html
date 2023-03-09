@@ -9,70 +9,30 @@
     
 </head>
 <body>
-    <div class="main">
+
+    <div class="main" id="app">
+
         <header>
-            <h1>Personagens do Star Wars Lego</h1>
+            <h1>{{ title }}</h1>
         </header>
+
         <main>
-            <section>
-                <h2>C3PO</h2>
+
+            <section class="item" v-for="item of characters">
+                <h2>{{ item.nome }}</h2>
                 <figure>
-                    <img src="img/c3po.png" alt="C3PO Lego">
-                    <figcaption>C3PO</figcaption>
+                    <img :src="item.avatar" :alt="item.nome">
+                    <figcaption> {{ item.nome }} </figcaption>
                 </figure>
             </section>
-            <section>
-                <h2>Chewbacca</h2>
-                <figure>
-                    <img src="img/chewbacca.png" alt="Chewbacca Lego">
-                    <figcaption>Chewbacca</figcaption>
-                </figure>
-            </section>
-            <section>
-                <h2>Han Solo</h2>
-                <figure>
-                    <img src="img/hansolo.png" alt="Han Solo Lego">
-                    <figcaption>Han Solo</figcaption>
-                </figure>
-            </section>
-            <section>
-                <h2>Princesa Leia</h2>
-                <figure>
-                    <img src="img/leia.png" alt="Princesa Leia Lego">
-                    <figcaption>Princesa Leia</figcaption>
-                </figure>
-            </section>
-            <section>
-                <h2>Luke Skywalker</h2>
-                <figure>
-                    <img src="img/luke.png" alt="Luke Lego">
-                    <figcaption>Luke</figcaption>
-                </figure>
-            </section>
-            <section>
-                <h2>R2D2</h2>
-                <figure>
-                    <img src="img/r2d2.png" alt="R2D2 Lego">
-                    <figcaption>R2D2</figcaption>
-                </figure>
-            </section>
-            <section>
-                <h2>Darth Vader</h2>
-                <figure>
-                    <img src="img/vader.png" alt="Dart Vader Lego">
-                    <figcaption>Vader</figcaption>
-                </figure>
-            </section>
-            <section>
-                <h2>Mestre Yoda</h2>
-                <figure>
-                    <img src="img/yoda.png" alt="Mestre Yoda Lego">
-                    <figcaption>Yoda</figcaption>
-                </figure>
-            </section>
+
         </main>
-        <small>Criado por <span id="user-name"></span></small>
+
+        <small>Criado por {{ userName }} </small>
+    
     </div>
-    <script src="js/main.js"></script>
+
+    <script type="text/javascript" src="js/vue.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
 </body>
 </html>
