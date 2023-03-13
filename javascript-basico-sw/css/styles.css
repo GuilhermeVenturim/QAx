@@ -1,0 +1,114 @@
+body {
+   background-image: url(../images/bg-space.png);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   background-color: #111;
+   color: #CCC;
+   font-family: 'Acme', cursive;
+}
+
+#app {
+   text-align: center;
+   width: 820px;
+   margin: auto;
+}
+
+h1 {
+   display: flex;
+   width: 100%;
+   height: 10vh;
+   color: rgb(228, 253, 2);
+   justify-content: center;
+   margin-top: 2.5%;
+   font-size: 3.5rem;
+}
+
+.top {
+   padding: 25px;
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   align-items: center;
+   text-align: left;
+}
+
+.top h1 {
+   font-size: 2em;
+   margin: 0;
+   color: #fff;
+}
+
+.top form {
+   margin: 0;
+}
+
+.top form {
+   text-align: right;
+}
+
+.characters {
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+}
+
+img {
+   border-radius: 5%;
+}
+
+img:hover {
+   border: 5px #FD4 solid;
+}
+
+.characters .item {
+   padding: 20px;
+}
+
+.characters .item img {
+   width: 100%;
+   border-radius: 20%;
+   border: 5px #111 solid;
+}
+
+.characters .item img:hover {
+   border: 5px #FD4 solid;
+}
+
+input {
+   padding: 0.75em 1.25em;
+   border-radius: 8px;
+   border: none;
+   font-size: 1rem;
+   font-family: 'Acme', cursive;
+}
+
+button {
+   padding: 0.75em 1.25em;
+   border-radius: 8px;
+   background-color: #FD4;
+   color: #111;
+   font-size: 1rem;
+   border: none;
+   font-family: 'Acme', cursive;
+}
+
+span {
+   padding: 10px;
+   gap: 10%;
+   margin-top: -2%;
+   margin-bottom: 5%;
+}
+
+.curtir {
+   color: #fffcfc;
+   cursor: pointer;
+}
+
+.remover {
+   color: rgb(180, 166, 166);
+   cursor: pointer;
+}
+
+figcaption {
+   font-size: 0.1rem;
+}
+
